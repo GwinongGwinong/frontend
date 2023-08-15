@@ -1,0 +1,43 @@
+.navBar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.logo {
+    width: 50;
+    height: 50;
+}
+
+.logoBox{
+    margin-left: 40px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.icon {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.iconBox{
+    margin-right: 40px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.mainImg {
+    margin: auto;
+}
+
+.mainWrap{
+    display: flex;
+    justify-content: center;
+}
