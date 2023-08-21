@@ -12,8 +12,8 @@
 }
 .heart{
     position: absolute;
-    top:15%;
-    left:80%;
+    top:10%;
+    left:85%;
 }
 
 .img{
@@ -27,7 +27,15 @@
 }
 .text{
     position: absolute;
-    top:70%;
+    top:80%;
     left:80%;
     color: white;
+    background-color: #0086FD;
+    border-radius: 8px;
+    padding:5px;
+    font-weight: bold;
+}
+.bottomRight{
+    text-align: right;
+    font-size:20px;
 }

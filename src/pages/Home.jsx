@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
 //import ImageSlider from "../components/Slider";
-import Titles from "../components/Titles";
 import Card from "../components/Card";
 export default function Home() {
 

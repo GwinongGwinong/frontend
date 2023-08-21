@@ -1,5 +1,9 @@
 :root{
-  --color-grey:#b6b6b69a;
+  --color-black:#3F3F3F;
+  --color-grey:#6B6B6B;
+  --color-blue:#0086FD;
+  --color-red:#FF6868;
+  --color-yellow:#FFBB53;
 }
 body {
   margin: 0;
