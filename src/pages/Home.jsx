@@ -1,14 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
-//import ImageSlider from "../components/Slider";
+import ImageSlider from "../components/Slider";
 import Titles from "../components/Titles";
 export default function Home() {
 
     return (
         <>
         <Navbar />
-        {/* <ImageSlider /> */}
+        <ImageSlider />
         <Titles />
         <div>
             인기있는 파밍 홀리데이 패키지

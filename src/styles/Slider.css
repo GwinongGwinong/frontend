@@ -3,3 +3,11 @@
     overflow: hidden;
     overflow-x: hidden;
 }
+
+/* .slick-dots ul li button::before{ //슬라이드 Dot흰색으로
+    color: white;
+} */
+
+.slick-active {
+    color: white;
+}

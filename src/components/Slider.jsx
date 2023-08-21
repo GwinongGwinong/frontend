@@ -11,9 +11,27 @@ const ImageSlider = () => {
     dots: true,
     fade: true,
     infinite: true,
+    autoplay: true,
     speed: 500,
+    autoplaySpeed: 2000,
     cssEase: 'linear',
-   
+    appendDots: (dots) => (
+        <div
+          style={{
+            color: 'white',
+            marginLeft: '38vw',
+            marginBottom: '46vh',
+            width: '100%',
+            position: 'absolute',
+            bottom: '24px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+        >
+          <ul> {dots} </ul>
+        </div>
+      ),
   };
 
   return (
