@@ -1,0 +1,28 @@
+.div{
+    border-radius: 17px;
+    background-color: antiquewhite;
+    width: 357px;
+    box-shadow: 0px -1px 56px -9px rgba(83,83,83,0.75);
+        -webkit-box-shadow: 0px -1px 56px -9px rgba(83,83,83,0.75);
+        -moz-box-shadow: 0px -1px 56px -9px rgba(83,83,83,0.75);
+}
+
+.wrap{
+    position:relative;
+}
+.heart{
+    position: absolute;
+    top:15%;
+    left:80%;
+}
+
+.img{
+    width: 30px;
+}
+
+.text{
+    position: absolute;
+    top:70%;
+    left:80%;
+    color: white;
+}
