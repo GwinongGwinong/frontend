@@ -9,11 +9,7 @@ export default function Home() {
     return (
         <>
         <Navbar />
-<<<<<<< HEAD
-=======
         {/* <ImageSlider /> */}
-        <Titles />
->>>>>>> 3738d3b0b685a083a0991e0f4ef3328f25b2501b
         <div>
             <a href='#one'>홀리데이 패키지</a>
             <a href='#two'>이색 전원주택</a>
