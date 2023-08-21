@@ -1,3 +1,25 @@
+.titles{
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    /*text-align:cneter;*/
+    background-color: var(--color-grey);
+    width: 50%;
+    margin:0 auto; /*전체 중앙정렬*/
+    border-radius: 10px;
+}
+
 a{
     text-decoration: none;
+    color:black;
+    padding:10px;
+}
+h2{
+    text-align: center;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto; /*전체 중앙정렬*/
+    width: 80%;
 }
