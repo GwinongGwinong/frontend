@@ -2,16 +2,18 @@ import React, { useEffect, useState } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import './App.css';
 import Home from "./pages/Home";
+import Myslider from "./components/Myslider";
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
   },
-  // {
-  //   path: "/profile",
-  //   element: <Profile />,
-  // },
+  {
+    path: "/myslider",
+    element: <Myslider />,
+  },
 ]);
 
 
