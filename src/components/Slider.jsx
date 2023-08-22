@@ -5,7 +5,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const ImageSlider = () => {
+const ImageSlider = (imgSlide) => {
+  const imgArr = Object.values(imgSlide);
 
   const settings = {
     dots: true,
@@ -19,9 +20,9 @@ const ImageSlider = () => {
         <div
           style={{
             color: 'white',
-            marginLeft: '38vw',
+            marginLeft: '84%',
             marginBottom: '46vh',
-            width: '100%',
+            width: '10%',
             position: 'absolute',
             bottom: '24px',
             display: 'flex',
@@ -32,30 +33,26 @@ const ImageSlider = () => {
           <ul> {dots} </ul>
         </div>
       ),
+      
   };
 
   return (
 
     <div className={styles.mainWrap}>
     <Slider {...settings}>
-        <div>
-            <img
-                src={`${process.env.PUBLIC_URL}/public_assets/main.png`}
-                alt="main"
-            />
-        </div>
-        <div>
-            <img
-                src={`${process.env.PUBLIC_URL}/public_assets/main.png`}
-                alt="main"
-            />      
-        </div>
-        <div>
-            <img
-                src={`${process.env.PUBLIC_URL}/public_assets/main.png`}
-                alt="main"
-            />      
-        </div>
+        {imgArr&&
+            imgArr[0].map((imgURL,index)=> (
+            <div>
+                <img
+                    key={index}
+                    src={`${process.env.PUBLIC_URL}/public_assets/${imgURL}.png`}
+                    alt="main"
+                />
+                <p className={styles.slideText}>함께 가꾸어나가는 귀농생활</p>
+                <p className={styles.intro}>함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요!
+                행복한 전원생활을 함께해보세요!</p>
+            </div>
+        ))}
     </Slider>
     </div>
     
