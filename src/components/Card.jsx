@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Card.module.css'
 export default function Card() {
+
+    const [packageIndex,setPackageIndex] = useState();
+
     return (
         <div className={styles.div}>
             <div className={styles.wrapImg}>

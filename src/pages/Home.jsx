@@ -1,14 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
+import { Link } from 'react-router-dom'; 
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/Navbar";
 import ImageSlider from "../components/Slider";
 import Card from "../components/Card";
 export default function Home() {
-    const [imgUrl,setImgUrl] = useState(['main','main','main']);
+    const [imgUrl,setImgUrl] = useState(['1','2','2']);
 
     return (
         <>
-        <Navbar />
         <ImageSlider imgUrl={imgUrl}/>   
         <div className={styles.titles}>
             <a href='#one'>홀리데이 패키지</a>
@@ -19,9 +18,15 @@ export default function Home() {
         <div id="one">
             <h2>인기있는 파밍 홀리데이 패키지</h2>
             <div className={styles.card}>
-                <Card />
-                <Card />
-                <Card />
+                <Link to="/holidaypackage"> 
+                    <Card />
+                </Link>
+                <Link to="/holidaypackage"> 
+                    <Card />
+                </Link>
+                <Link to="/holidaypackage"> 
+                    <Card />
+                </Link>
             </div>
         </div>
         <div id="two">

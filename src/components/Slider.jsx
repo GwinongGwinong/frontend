@@ -45,7 +45,7 @@ const ImageSlider = (imgSlide) => {
             <div>
                 <img
                     key={index}
-                    src={`${process.env.PUBLIC_URL}/public_assets/${imgURL}.png`}
+                    src={`${process.env.PUBLIC_URL}/public_assets/mainImg/main_${imgURL}.svg`}
                     alt="main"
                 />
                 <p className={styles.slideText}>함께 가꾸어나가는 귀농생활</p>
