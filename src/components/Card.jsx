@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '../styles/Card.module.css'
+
 export default function Card({image,imageTop,imageUnder,textTop,textTopRight,textMiddle1,textMiddle2,textUnderLeft,textUnderRight}) {
     return (
         <div className={styles.div}>

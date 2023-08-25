@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className={styles.navBar}>
             <div className={styles.logoBox}>
                 <img
-                    src={`${process.env.PUBLIC_URL}/public_assets/logo.png`}
+                    src={`${process.env.PUBLIC_URL}/public_assets/logo.svg`}
                     className={styles.logo}
                     alt="Logo"
                 />
@@ -24,16 +24,6 @@ export default function Navbar() {
                 </div>
             </div>
         </div>
-
-        {/* <div className={styles.mainWrap}>
-            <img
-                src={`${process.env.PUBLIC_URL}/public_assets/main.png`}
-                style={{ margin: 'auto' }}
-                className={styles.mainImg}
-                alt="main"
-            />
-        </div> */}
-        
         </>
     );
 }

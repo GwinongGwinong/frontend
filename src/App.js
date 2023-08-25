@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import './App.css';
 import Home from "./pages/Home";
-import Myslider from "./components/Myslider";
+import HolidayPackage from "./pages/HolidayPackage";
+import Layout from "./components/Layout";
 
 
 const router = createBrowserRouter([
@@ -11,8 +12,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/myslider",
-    element: <Myslider />,
+    path: "/holidaypackage",
+    element: <HolidayPackage />,
   },
 ]);
 
@@ -20,7 +21,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <React.StrictMode>
+      <Layout>
         <RouterProvider router={router}></RouterProvider>
+      </Layout>
     </React.StrictMode>
   );
 }
