@@ -4,8 +4,6 @@ import styles from "../styles/Home.module.css";
 import ImageSlider from "../components/Slider";
 import Card from "../components/Card";
 export default function Home() {
-<<<<<<< HEAD
-    const [imgUrl,setImgUrl] = useState(['main','main','main']);
     /*
     Card Component
     : imageTop,imageUnder,
@@ -13,11 +11,10 @@ export default function Home() {
     textMiddle1,textMiddle2,
     textUnderLeft,textUnderRight
     */
-   const mainList=['홀리데이 패키지','이색 전원주택','홀리데이 커뮤니티','호스트 이야기'];
-=======
+    const mainList=['홀리데이 패키지','이색 전원주택','홀리데이 커뮤니티','호스트 이야기'];
+
     const [imgUrl,setImgUrl] = useState(['1','2','2']);
 
->>>>>>> 2302101428cd9657af59c60d76fb2816896487c7
     return (
         <>
         <ImageSlider imgUrl={imgUrl}/>   
@@ -32,42 +29,31 @@ export default function Home() {
             <div className={styles.card}>
                 <Link to="/holidaypackage"> 
                     <Card
-                    image={`${process.env.PUBLIC_URL}/public_assets/package-1.png`}
-                    imageUnder={`모집중`}
-                    textTop={`벼농사 재배 경운기`}
-                    textMiddle1={`전라북도 부안군`}
-                    textMiddle2={`2023년 8월 10일 ~ 2024년 1월 10일`}
-<<<<<<< HEAD
-                    textUnderRight={`월230/6개월`}/>
-                <Card
-                    image={`${process.env.PUBLIC_URL}/public_assets/package-2.png`}
-                    imageUnder={`모집중`}
-                    textTop={`치즈 유가공`}
-                    textMiddle1={`전라북도 임실군`}
-                    textMiddle2={`2023년 8월 20일 ~ 2024년 1월 20일`}
-                    textUnderRight={`월220/7개월`}/>
-                <Card
-                    image={`${process.env.PUBLIC_URL}/public_assets/package-3.png`}
-                    imageUnder={`모집중`}
-                    textTop={`토마토 재배`}
-                    textMiddle1={`충청남도 보령시`}
-                    textMiddle2={`2023년 8월 31일 ~ 2024년 1월 31일`}
-                    textUnderRight={`월230/6개월`}/>
-=======
-                    textUnderRight={`월230/6개월`}/>                
+                        image={`${process.env.PUBLIC_URL}/public_assets/package-1.png`}
+                        imageUnder={`모집중`}
+                        textTop={`벼농사 재배 경운기`}
+                        textMiddle1={`전라북도 부안군`}
+                        textMiddle2={`2023년 8월 10일 ~ 2024년 1월 10일`}
+                        textUnderRight={`월230/6개월`}/>             
                 </Link>
                 <Link to="/holidaypackage">
                     <Card
-                        imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                        image={`${process.env.PUBLIC_URL}/public_assets/package-2.png`}
                         imageUnder={`모집중`}
                         textTop={`치즈 유가공`}
                         textMiddle1={`전라북도 임실군`}
                         textMiddle2={`2023년 8월 20일 ~ 2024년 1월 20일`}
                         textUnderRight={`월220/7개월`}/>
-                    <Card />
                 </Link>
-                
->>>>>>> 2302101428cd9657af59c60d76fb2816896487c7
+                <Link to="/holidaypackage">
+                    <Card
+                        image={`${process.env.PUBLIC_URL}/public_assets/package-2.png`}
+                        imageUnder={`모집중`}
+                        textTop={`치즈 유가공`}
+                        textMiddle1={`전라북도 임실군`}
+                        textMiddle2={`2023년 8월 20일 ~ 2024년 1월 20일`}
+                        textUnderRight={`월220/7개월`}/>
+                </Link>
             </div>
         </div>
         <div id="two">
