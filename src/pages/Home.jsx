@@ -19,14 +19,26 @@ export default function Home() {
             <h2>인기있는 파밍 홀리데이 패키지</h2>
             <div className={styles.card}>
                 <Link to="/holidaypackage"> 
+                    <Card
+                    image={`${process.env.PUBLIC_URL}/public_assets/package-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    imageUnder={`모집중`}
+                    textTop={`벼농사 재배 경운기`}
+                    textMiddle1={`전라북도 부안군`}
+                    textMiddle2={`2023년 8월 10일 ~ 2024년 1월 10일`}
+                    textUnderRight={`월230/6개월`}/>                
+                </Link>
+                <Link to="/holidaypackage">
+                    <Card
+                        imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                        imageUnder={`모집중`}
+                        textTop={`치즈 유가공`}
+                        textMiddle1={`전라북도 임실군`}
+                        textMiddle2={`2023년 8월 20일 ~ 2024년 1월 20일`}
+                        textUnderRight={`월220/7개월`}/>
                     <Card />
                 </Link>
-                <Link to="/holidaypackage"> 
-                    <Card />
-                </Link>
-                <Link to="/holidaypackage"> 
-                    <Card />
-                </Link>
+                
             </div>
         </div>
         <div id="two">
