@@ -10,8 +10,10 @@ export default function Card({image,imageTop,imageUnder,textTop,textTopRight,tex
             </div>
             <div className={styles.wrapText}>
                 <div>{textTop}</div>
+                <div>{textTopRight}</div>
                 <div>{textMiddle1}</div>
                 <div>{textMiddle2}</div>
+                <div>{textUnderLeft}</div>
                 <div className={styles.bottomRight}>{textUnderRight}</div>
             </div>
         </div>

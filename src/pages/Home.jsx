@@ -12,41 +12,56 @@ export default function Home() {
     textMiddle1,textMiddle2,
     textUnderLeft,textUnderRight
     */
+   const mainList=['홀리데이 패키지','이색 전원주택','홀리데이 커뮤니티','호스트 이야기'];
     return (
         <>
         <Navbar />
         <ImageSlider imgUrl={imgUrl}/>   
         <div className={styles.titles}>
-            <a href='#one'>홀리데이 패키지</a>
-            <a href='#two'>이색 전원주택</a>
-            <a href='#three'>홀리데이 커뮤니티</a>
-            <a href='#four'>호스트 이야기</a>
+            <a href='#one'>{mainList[0]}</a>
+            <a href='#two'>{mainList[1]}</a>
+            <a href='#three'>{mainList[2]}</a>
+            <a href='#four'>{mainList[3]}</a>
         </div>
         <div id="one">
             <h2>인기있는 파밍 홀리데이 패키지</h2>
             <div className={styles.card}>
                 <Card
                     image={`${process.env.PUBLIC_URL}/public_assets/package-1.png`}
-                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
                     imageUnder={`모집중`}
                     textTop={`벼농사 재배 경운기`}
                     textMiddle1={`전라북도 부안군`}
                     textMiddle2={`2023년 8월 10일 ~ 2024년 1월 10일`}
                     textUnderRight={`월230/6개월`}/>
                 <Card
-                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    image={`${process.env.PUBLIC_URL}/public_assets/package-2.png`}
                     imageUnder={`모집중`}
                     textTop={`치즈 유가공`}
                     textMiddle1={`전라북도 임실군`}
                     textMiddle2={`2023년 8월 20일 ~ 2024년 1월 20일`}
                     textUnderRight={`월220/7개월`}/>
-                <Card />
+                <Card
+                    image={`${process.env.PUBLIC_URL}/public_assets/package-3.png`}
+                    imageUnder={`모집중`}
+                    textTop={`토마토 재배`}
+                    textMiddle1={`충청남도 보령시`}
+                    textMiddle2={`2023년 8월 31일 ~ 2024년 1월 31일`}
+                    textUnderRight={`월230/6개월`}/>
             </div>
         </div>
         <div id="two">
             <h2>살아보고 싶은 이색 농촌 전원 주택</h2>
             <div className={styles.card}>
-                <Card />
+                <Card
+                    image={`${process.env.PUBLIC_URL}/public_assets/building-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    imageUnder={`인기`}
+                    textTop={`청원 사과마을 전원주택`}
+                    textTopRight={`4.91`}
+                    textMiddle1={`전라북도 임실군*김옥춘 할머니와 함께`}
+                    textMiddle2={`2023년 8월 31일 ~ 2024년 1월 31일`}
+                    textUnderLeft={`${process.env.PUBLIC_URL}/public_assets/building-host.png`}
+                    textUnderRight={`월10/6개월`}/>
                 <Card />
                 <Card />
             </div>
@@ -54,7 +69,11 @@ export default function Home() {
         <div id="three">
             <h2>파밍 홀리데이 순간들</h2>
             <div className={styles.card}>
-                <Card />
+                <Card
+                    image={`${process.env.PUBLIC_URL}/public_assets/package-3.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    textTop={`6개월 체험 프로그램`}
+                    textMiddle1={`#토마토 재배 스마트팜`}/>
                 <Card />
                 <Card />
             </div>
@@ -62,7 +81,13 @@ export default function Home() {
         <div id="four">
             <h2>파밍 홀리데이 슈퍼 호스트</h2>
             <div className={styles.card}>
-                <Card />
+                <Card
+                    image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    textTop={`양봉 양춘식 호스트`}
+                    textMiddle1={`#양봉 30년차`}
+                    textMiddle2={`#벌꿀로 강남 건물주`}
+                    textUnderRight={`리뷰22개`}/>
                 <Card />
                 <Card />
             </div>
