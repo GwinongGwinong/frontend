@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from "../styles/Home.module.css";
 import ImageSlider from "../components/Slider";
 import Card from "../components/Card";
+import CardLong from "../components/CardLong";
 export default function Home() {
     /*
     Card Component
@@ -12,7 +13,7 @@ export default function Home() {
     textUnderLeft,textUnderRight
     */
     const mainList=['홀리데이 패키지','이색 전원주택','홀리데이 커뮤니티','호스트 이야기'];
-
+    const showMore='더보러가기 >';
     const [imgUrl,setImgUrl] = useState(['1','2','2']);
 
     return (
@@ -26,6 +27,7 @@ export default function Home() {
         </div>
         <div id="one">
             <h2>인기있는 파밍 홀리데이 패키지</h2>
+            <div>{showMore}</div>
             <div className={styles.card}>
                 <Link to="/holidaypackage"> 
                     <Card
@@ -58,6 +60,7 @@ export default function Home() {
         </div>
         <div id="two">
             <h2>살아보고 싶은 이색 농촌 전원 주택</h2>
+            <div>{showMore}</div>
             <div className={styles.card}>
                 <Card
                     image={`${process.env.PUBLIC_URL}/public_assets/building-1.png`}
@@ -75,6 +78,7 @@ export default function Home() {
         </div>
         <div id="three">
             <h2>파밍 홀리데이 순간들</h2>
+            <div>{showMore}</div>
             <div className={styles.card}>
                 <Card
                     image={`${process.env.PUBLIC_URL}/public_assets/package-3.png`}
@@ -87,16 +91,36 @@ export default function Home() {
         </div>
         <div id="four">
             <h2>파밍 홀리데이 슈퍼 호스트</h2>
+            <div>{showMore}</div>
             <div className={styles.card}>
-                <Card
+                <CardLong
                     image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
                     imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
                     textUnderRight={`리뷰22개`}/>
-                <Card />
-                <Card />
+                <CardLong
+                    image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    textTop={`양봉 양춘식 호스트`}
+                    textMiddle1={`#양봉 30년차`}
+                    textMiddle2={`#벌꿀로 강남 건물주`}
+                    textUnderRight={`리뷰22개`}/>
+                <CardLong
+                    image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    textTop={`양봉 양춘식 호스트`}
+                    textMiddle1={`#양봉 30년차`}
+                    textMiddle2={`#벌꿀로 강남 건물주`}
+                    textUnderRight={`리뷰22개`}/>
+                <CardLong
+                    image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    textTop={`양봉 양춘식 호스트`}
+                    textMiddle1={`#양봉 30년차`}
+                    textMiddle2={`#벌꿀로 강남 건물주`}
+                    textUnderRight={`리뷰22개`}/>
             </div>
         </div>
         </>
