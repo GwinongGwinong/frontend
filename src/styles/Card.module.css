@@ -10,6 +10,16 @@
 .wrapImg{
     position:relative;
 }
+
+.wrapImgDirect{
+    width: 357px;
+}
+
+.imgShort{
+    width: 100%;
+    height: 100%;
+}
+
 .heart{
     position: absolute;
     top:10%;

@@ -5,7 +5,7 @@ export default function Card({image,imageTop,imageUnder,textTop,textTopRight,tex
     return (
         <div className={styles.div}>
             <div className={styles.wrapImg}>
-                <div><img src={image} /></div>
+                <div className={styles.wrapImgDirect}><img className={styles.imgShort} src={image} /></div>
                 <div className={styles.heart}><img className={styles.img} src={imageTop} /></div>
                 <div className={styles.text}><div>{imageUnder}</div></div>
             </div>
