@@ -27,11 +27,11 @@ export default function Home() {
         </div>
         <div id="one">
             <h2>인기있는 파밍 홀리데이 패키지</h2>
-            <div>{showMore}</div>
+            <div className={styles.showMore}>{showMore}</div>
             <div className={styles.card}>
                 <Link to="/holidaypackage"> 
                     <Card
-                        image={`${process.env.PUBLIC_URL}/public_assets/package-1.png`}
+                        image={`${process.env.PUBLIC_URL}/public_assets/homeImg/package-1.png`}
                         imageUnder={`모집중`}
                         textTop={`벼농사 재배 경운기`}
                         textMiddle1={`전라북도 부안군`}
@@ -40,7 +40,7 @@ export default function Home() {
                 </Link>
                 <Link to="/holidaypackage">
                     <Card
-                        image={`${process.env.PUBLIC_URL}/public_assets/package-2.png`}
+                        image={`${process.env.PUBLIC_URL}/public_assets/homeImg/package-2.png`}
                         imageUnder={`모집중`}
                         textTop={`치즈 유가공`}
                         textMiddle1={`전라북도 임실군`}
@@ -49,7 +49,7 @@ export default function Home() {
                 </Link>
                 <Link to="/holidaypackage">
                     <Card
-                        image={`${process.env.PUBLIC_URL}/public_assets/package-2.png`}
+                        image={`${process.env.PUBLIC_URL}/public_assets/homeImg/package-2.png`}
                         imageUnder={`모집중`}
                         textTop={`치즈 유가공`}
                         textMiddle1={`전라북도 임실군`}
@@ -60,17 +60,17 @@ export default function Home() {
         </div>
         <div id="two">
             <h2>살아보고 싶은 이색 농촌 전원 주택</h2>
-            <div>{showMore}</div>
+            <div className={styles.showMore}>{showMore}</div>
             <div className={styles.card}>
                 <Card
-                    image={`${process.env.PUBLIC_URL}/public_assets/building-1.png`}
-                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/building-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     imageUnder={`인기`}
                     textTop={`청원 사과마을 전원주택`}
                     textTopRight={`4.91`}
                     textMiddle1={`전라북도 임실군*김옥춘 할머니와 함께`}
                     textMiddle2={`2023년 8월 31일 ~ 2024년 1월 31일`}
-                    textUnderLeft={`${process.env.PUBLIC_URL}/public_assets/building-host.png`}
+                    textUnderLeft={`${process.env.PUBLIC_URL}/public_assets/homeImg/building-host.png`}
                     textUnderRight={`월10/6개월`}/>
                 <Card />
                 <Card />
@@ -78,11 +78,11 @@ export default function Home() {
         </div>
         <div id="three">
             <h2>파밍 홀리데이 순간들</h2>
-            <div>{showMore}</div>
+            <div className={styles.showMore}>{showMore}</div>
             <div className={styles.card}>
                 <Card
-                    image={`${process.env.PUBLIC_URL}/public_assets/package-3.png`}
-                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/package-3.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`6개월 체험 프로그램`}
                     textMiddle1={`#토마토 재배 스마트팜`}/>
                 <Card />
@@ -91,32 +91,32 @@ export default function Home() {
         </div>
         <div id="four">
             <h2>파밍 홀리데이 슈퍼 호스트</h2>
-            <div>{showMore}</div>
+            <div className={styles.showMore}>{showMore}</div>
             <div className={styles.card}>
                 <CardLong
-                    image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
-                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
                     textUnderRight={`리뷰22개`}/>
                 <CardLong
-                    image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
-                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
                     textUnderRight={`리뷰22개`}/>
                 <CardLong
-                    image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
-                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
                     textUnderRight={`리뷰22개`}/>
                 <CardLong
-                    image={`${process.env.PUBLIC_URL}/public_assets/host-1.png`}
-                    imageTop={`${process.env.PUBLIC_URL}/public_assets/heart.png`}
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
