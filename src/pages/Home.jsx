@@ -34,6 +34,7 @@ export default function Home() {
                         image={`${process.env.PUBLIC_URL}/public_assets/homeImg/package-1.png`}
                         imageUnder={`모집중`}
                         textTop={`벼농사 재배 경운기`}
+                        textTopRight={`4.91`}
                         textMiddle1={`전라북도 부안군`}
                         textMiddle2={`2023년 8월 10일 ~ 2024년 1월 10일`}
                         textUnderRight={`월230/6개월`}/>             
@@ -99,28 +100,28 @@ export default function Home() {
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
-                    textUnderRight={`리뷰22개`}/>
+                    textUnderRight={`4.91`}/>
                 <CardLong
                     image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
                     imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
-                    textUnderRight={`리뷰22개`}/>
+                    textUnderRight={`4.91`}/>
                 <CardLong
                     image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
                     imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
-                    textUnderRight={`리뷰22개`}/>
+                    textUnderRight={`4.91`}/>
                 <CardLong
                     image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
                     imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`양봉 양춘식 호스트`}
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
-                    textUnderRight={`리뷰22개`}/>
+                    textUnderRight={`4.91`}/>
             </div>
         </div>
         </>

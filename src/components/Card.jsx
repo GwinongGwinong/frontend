@@ -11,10 +11,13 @@ export default function Card({image,imageTop,imageUnder,textTop,textTopRight,tex
             </div>
             <div className={styles.wrapText}>
                 <div>{textTop}</div>
-                <div>{textTopRight}</div>
+                <div>
+                    <img src={`${process.env.PUBLIC_URL}/public_assets/homeImg/star.svg`} />
+                    {textTopRight}
+                </div>
                 <div>{textMiddle1}</div>
                 <div>{textMiddle2}</div>
-                <div>{textUnderLeft}</div>
+                <div><img src={textUnderLeft} /></div>
                 <div className={styles.bottomRight}>{textUnderRight}</div>
             </div>
         </div>

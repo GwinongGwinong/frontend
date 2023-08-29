@@ -12,7 +12,10 @@ export default function CardLong({image,imageTop,textTop,textMiddle1,textMiddle2
                 <div>{textTop}</div>
                 <div>{textMiddle1}</div>
                 <div>{textMiddle2}</div>
-                <div className={styles.bottomRight}>{textUnderRight}</div>
+                <div className={styles.bottomRight}>
+                    <img src={`${process.env.PUBLIC_URL}/public_assets/homeImg/star.svg`} />
+                    {textUnderRight}
+                </div>
             </div>
         </div>
     );
