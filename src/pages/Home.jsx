@@ -71,7 +71,7 @@ export default function Home() {
                     textTopRight={`4.91`}
                     textMiddle1={`전라북도 임실군*김옥춘 할머니와 함께`}
                     textMiddle2={`2023년 8월 31일 ~ 2024년 1월 31일`}
-                    textUnderLeft={`${process.env.PUBLIC_URL}/public_assets/homeImg/building-host.png`}
+                    textUnderLeft={`${process.env.PUBLIC_URL}/public_assets/homeImg/building-host.svg`}
                     textUnderRight={`월10/6개월`}/>
                 <Card />
                 <Card />

@@ -36,8 +36,11 @@
     border-bottom-right-radius: 15px;
     padding:10px;
 }
-.textTop{
-    display:inline;
+.textTopOne{
+    float:left;
+}
+.textTopTwo{
+    float:left;
 }
 .textBlue{
     position: absolute;

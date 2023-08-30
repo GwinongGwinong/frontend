@@ -11,8 +11,8 @@ export default function Card({image,imageTop,imageUnder,textTop,textTopRight,tex
             </div>
             <div className={styles.wrapText}>
                 <div className={styles.textTop}>
-                    <div>{textTop}</div>
-                    <ShwoStar text={textTopRight}/>
+                    <div className={styles.textTopOne}>{textTop}</div>
+                    <ShwoStar className={styles.textTopTwo} text={textTopRight}/>
                 </div>
                 <div>{textMiddle1}</div>
                 <div>{textMiddle2}</div>
