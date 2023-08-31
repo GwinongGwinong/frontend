@@ -11,13 +11,13 @@ export default function Card({image,imageTop,imageUnder,textTop,textTopRight,tex
             </div>
             <div className={styles.wrapText}>
                 <div className={styles.textTop}>
-                    <div className={styles.textTopOne}>{textTop}</div>
-                    <ShwoStar className={styles.textTopTwo} text={textTopRight}/>
+                    <div className={styles.textTop1}>{textTop}</div>
+                    <ShwoStar text={textTopRight}/>
                 </div>
-                <div>{textMiddle1}</div>
-                <div>{textMiddle2}</div>
+                <div className={styles.textMiddle1}>{textMiddle1}</div>
+                <div className={styles.textMiddle2}>{textMiddle2}</div>
                 <div><img src={textUnderLeft} /></div>
-                <div className={styles.bottomRight}>{textUnderRight}</div>
+                <ShowTextUnderRight status={imageUnder} text={textUnderRight}/>
             </div>
         </div>
     );
@@ -25,7 +25,7 @@ export default function Card({image,imageTop,imageUnder,textTop,textTopRight,tex
 
 function ShwoStar({text}){
     if(text){
-        return <div><img src={`${process.env.PUBLIC_URL}/public_assets/homeImg/star.svg`} />{text}</div>;
+        return <div className={styles.textTop2}><img src={`${process.env.PUBLIC_URL}/public_assets/homeImg/star.svg`} />{text}</div>;
     }
     return null;
 }
@@ -35,6 +35,15 @@ function ShowStatus({text}){
     }
     else if(text==='인기'){
         return <div className={styles.textYellow}>{text}</div>
+    }
+    return null;
+}
+function ShowTextUnderRight({status,text}){
+    if(status==='모집중'){
+        return <div className={styles.bottomRightRed}>{text}</div>;
+    }
+    else if(status==='인기'){
+        return <div className={styles.bottomRightBlue}>{text}</div>;
     }
     return null;
 }

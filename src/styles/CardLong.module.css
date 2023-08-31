@@ -36,6 +36,12 @@
     border-bottom-right-radius: 15px;
     padding:10px;
 }
+.textTop{
+    font-weight: bold;
+}
+.textMiddle{
+    color:var(--color-grey);
+}
 .text{
     position: absolute;
     top:80%;
@@ -49,4 +55,5 @@
 .bottomRight{
     text-align: right;
     font-size:20px;
+    font-weight: bold;
 }

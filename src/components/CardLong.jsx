@@ -9,9 +9,9 @@ export default function CardLong({image,imageTop,textTop,textMiddle1,textMiddle2
                 <div className={styles.heart}><img className={styles.img} src={imageTop} /></div>
             </div>
             <div className={styles.wrapText}>
-                <div>{textTop}</div>
-                <div>{textMiddle1}</div>
-                <div>{textMiddle2}</div>
+                <div className={styles.textTop}>{textTop}</div>
+                <div className={styles.textMiddle}>{textMiddle1}</div>
+                <div className={styles.textMiddle}>{textMiddle2}</div>
                 <div className={styles.bottomRight}>
                     <img src={`${process.env.PUBLIC_URL}/public_assets/homeImg/star.svg`} />
                     {textUnderRight}
