@@ -16,8 +16,10 @@ export default function Card({image,imageTop,imageUnder,textTop,textTopRight,tex
                 </div>
                 <div className={styles.textMiddle1}>{textMiddle1}</div>
                 <div className={styles.textMiddle2}>{textMiddle2}</div>
-                <div><img src={textUnderLeft} /></div>
-                <ShowTextUnderRight status={imageUnder} text={textUnderRight}/>
+                <div className={styles.textUnder}>
+                    <div><img src={textUnderLeft} /></div>
+                    <ShowTextUnderRight status={imageUnder} text={textUnderRight}/>
+                </div>
             </div>
         </div>
     );
