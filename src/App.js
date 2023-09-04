@@ -4,7 +4,10 @@ import './App.css';
 import Home from "./pages/Home";
 import HolidayPackage from "./pages/HolidayPackage";
 import Layout from "./components/Layout";
-
+import DetailPackage from "./pages/DetailPackage";
+import DetailBuilding from "./pages/DetailBuilding";
+import DetailMoment from "./pages/DetailMoment";
+import DetailHost from "./pages/DetailHost";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +17,22 @@ const router = createBrowserRouter([
   {
     path: "/holidaypackage",
     element: <HolidayPackage />,
+  },
+  {
+    path: "/detailpackage",
+    element: <DetailPackage />,
+  },
+  {
+    path: "/detailbuilding",
+    element: <DetailBuilding />,
+  },
+  {
+    path: "/detailmoment",
+    element: <DetailMoment />,
+  },
+  {
+    path: "/detailhost",
+    element: <DetailHost />,
   },
 ]);
 

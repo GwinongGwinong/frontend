@@ -27,7 +27,11 @@ export default function Home() {
         </div>
         <div id="one">
             <h2>인기있는 파밍 홀리데이 패키지</h2>
-            <div className={styles.showMore}>{showMore}</div>
+            <div className={styles.showMore}>
+                <Link to="/detailpackage">
+                    {showMore}
+                </Link>
+            </div>
             <div className={styles.card}>
                 <Link to="/holidaypackage"> 
                     <Card
@@ -61,7 +65,11 @@ export default function Home() {
         </div>
         <div id="two">
             <h2>살아보고 싶은 이색 농촌 전원 주택</h2>
-            <div className={styles.showMore}>{showMore}</div>
+            <div className={styles.showMore}>
+                <Link to="/detailbuilding">
+                    {showMore}
+                </Link>
+            </div>
             <div className={styles.card}>
                 <Card
                     image={`${process.env.PUBLIC_URL}/public_assets/homeImg/building-1.png`}
@@ -79,7 +87,11 @@ export default function Home() {
         </div>
         <div id="three">
             <h2>파밍 홀리데이 순간들</h2>
-            <div className={styles.showMore}>{showMore}</div>
+            <div className={styles.showMore}>
+                <Link to="/detailmoment">
+                    {showMore}
+                </Link>
+            </div>
             <div className={styles.card}>
                 <Card
                     image={`${process.env.PUBLIC_URL}/public_assets/homeImg/package-3.png`}
@@ -92,7 +104,11 @@ export default function Home() {
         </div>
         <div id="four">
             <h2>파밍 홀리데이 슈퍼 호스트</h2>
-            <div className={styles.showMore}>{showMore}</div>
+            <div className={styles.showMore}>
+                <Link to="/detailhost">
+                    {showMore}
+                </Link>
+            </div>
             <div className={styles.card}>
                 <CardLong
                     image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
