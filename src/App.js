@@ -8,6 +8,7 @@ import DetailPackage from "./pages/DetailPackage";
 import DetailBuilding from "./pages/DetailBuilding";
 import DetailMoment from "./pages/DetailMoment";
 import DetailHost from "./pages/DetailHost";
+import SignUp from "./pages/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/detailhost",
     element: <DetailHost />,
+  },
+  {
+    path: "/signup",
+    element: <SignUp />,
   },
 ]);
 

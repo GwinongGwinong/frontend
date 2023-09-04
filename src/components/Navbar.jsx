@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/Navbar.module.css";
-
 export default function Navbar() {
     
     return (
@@ -23,6 +22,9 @@ export default function Navbar() {
                     <p style={{ margin: '0', fontSize: '12px' }}>Small Text</p>
                 </div>
             </div>
+            <a href="/signup">
+                <button>회원가입</button>
+            </a>
         </div>
         </>
     );

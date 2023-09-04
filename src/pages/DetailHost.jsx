@@ -13,6 +13,27 @@ export default function DetailHost() {
                     textMiddle1={`#양봉 30년차`}
                     textMiddle2={`#벌꿀로 강남 건물주`}
                     textUnderRight={`4.91`}/>
+                <CardLong
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
+                    textTop={`양봉 양춘식 호스트`}
+                    textMiddle1={`#양봉 30년차`}
+                    textMiddle2={`#벌꿀로 강남 건물주`}
+                    textUnderRight={`4.91`}/>
+                <CardLong
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
+                    textTop={`양봉 양춘식 호스트`}
+                    textMiddle1={`#양봉 30년차`}
+                    textMiddle2={`#벌꿀로 강남 건물주`}
+                    textUnderRight={`4.91`}/>
+                <CardLong
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/host-1.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
+                    textTop={`양봉 양춘식 호스트`}
+                    textMiddle1={`#양봉 30년차`}
+                    textMiddle2={`#벌꿀로 강남 건물주`}
+                    textUnderRight={`4.91`}/>
             </div>
         </>
     );

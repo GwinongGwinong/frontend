@@ -11,6 +11,16 @@ export default function DetailMoment() {
                     imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
                     textTop={`6개월 체험 프로그램`}
                     textMiddle1={`#토마토 재배 스마트팜`}/>
+                <Card
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/package-3.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
+                    textTop={`6개월 체험 프로그램`}
+                    textMiddle1={`#토마토 재배 스마트팜`}/>
+                <Card
+                    image={`${process.env.PUBLIC_URL}/public_assets/homeImg/package-3.png`}
+                    imageTop={`${process.env.PUBLIC_URL}/public_assets/homeImg/heart.svg`}
+                    textTop={`6개월 체험 프로그램`}
+                    textMiddle1={`#토마토 재배 스마트팜`}/>
             </div>
         </>
     );
