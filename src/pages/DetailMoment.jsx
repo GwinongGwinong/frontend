@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from "../components/Card";
 import styles from "../styles/Home.module.css";
+import ImageSlider from "../components/Slider";
+
 export default function DetailMoment() {
+    const [imgUrl,setImgUrl] = useState(['1']);
     return (
         <>
+            <ImageSlider imgUrl={imgUrl}/> 
             <h2>파밍 홀리데이 순간들</h2>
             <div className={styles.card}>
                 <Card
