@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from "../components/Card";
 import styles from "../styles/Home.module.css";
+import ImageSlider from "../components/Slider";
+
 export default function DetailBuilding() {
+    const [imgUrl,setImgUrl] = useState(['1']);
     return (
         <>
+            <ImageSlider imgUrl={imgUrl}/> 
             <h2>살아보고 싶은 이색 농촌 전원 주택</h2>
             <div className={styles.card}>
                 <Card
