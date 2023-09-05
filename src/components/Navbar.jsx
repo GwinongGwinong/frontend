@@ -44,19 +44,18 @@ export default function Navbar() {
                     </>  
                 ):(
                     <>
-                        <Link to="/signin" className={styles.linkTo}>
-                            <div className={styles.icon}>
-                                <button className={styles.mypageButton}>로그인</button>
-                            </div>
-                        </Link>
-
+                    <Link to="/signin" className={styles.linkTo}>
+                        <div className={styles.icon}>
+                            <button className={styles.mypageButton}>로그인</button>
+                        </div>
+                        <a href="/signup">
+                            <button>회원가입</button>
+                        </a>
+                    </Link>
                     </>
                 )}
                 {/* <LoginModal isOpen={isModalOpen} onClose={closeModal} /> */}
             </div>
-            <a href="/signup">
-                <button>회원가입</button>
-            </a>
         </div>
         </>
     );

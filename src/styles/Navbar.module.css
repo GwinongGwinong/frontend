@@ -1,8 +1,8 @@
 .navBar{
     background-color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;   
+    justify-content: space-between; 
     padding: 20px 10px 30px 10px;
 }
 
@@ -57,6 +57,8 @@
 }
 
 .linkTo{
+    display: flex;
+    float: right;
     margin:0;
     padding: 0;
 }
