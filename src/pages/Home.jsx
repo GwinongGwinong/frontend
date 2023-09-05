@@ -4,6 +4,10 @@ import styles from "../styles/Home.module.css";
 import ImageSlider from "../components/Slider";
 import Card from "../components/Card";
 import CardLong from "../components/CardLong";
+import { useRecoilState } from "recoil";
+import { userInfo } from "../recoil";
+import Navbar from "../components/Navbar"
+
 export default function Home() {
     /*
     Card Component
@@ -12,6 +16,8 @@ export default function Home() {
     textMiddle1,textMiddle2,
     textUnderLeft,textUnderRight
     */
+    const [user, setUser] = useRecoilState(userInfo);
+
     const mainList=['홀리데이 패키지','이색 전원주택','홀리데이 커뮤니티','호스트 이야기'];
     const showMore='더보러가기 >';
     const [imgUrl,setImgUrl] = useState(['1','2','2']);
@@ -19,6 +25,7 @@ export default function Home() {
     const [SliderTextBottom,setSliderTextBottom]=useState("함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요! 행복한 전원생활을 함께해보세요!");
     return (
         <>
+        <Navbar/>
         <ImageSlider imgUrl={imgUrl} SliderTextTop={SliderTextTop}/>   
         <div className={styles.titles}>
             <a href='#one'>{mainList[0]}</a>

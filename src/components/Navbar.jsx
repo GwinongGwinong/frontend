@@ -1,7 +1,27 @@
 import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/Navbar.module.css";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { useRecoilState } from "recoil";
+import { userInfo } from "../recoil";
+import Login from "./SignIn"
+
 export default function Navbar() {
-    
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [user, setUser] = useRecoilState(userInfo);
+
+    console.log(user);
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+    const logOut = () => {
+        setUser(null);
+    };
+
     return (
         <>
         <div className={styles.navBar}>
@@ -12,15 +32,27 @@ export default function Navbar() {
                     alt="Logo"
                 />
             </div>
-            <div className={styles.iconBox}>
-                <div className={styles.icon}>
-                    <img src="right_image_url"  width="50" height="50" style={{ marginRight: '10px' }} />
-                    <p style={{ margin: '0', fontSize: '12px' }}>Small Text</p>
-                </div>
-                <div className={styles.icon}>
-                    <img src="right_image_url"  width="50" height="50" style={{ marginRight: '10px' }} />
-                    <p style={{ margin: '0', fontSize: '12px' }}>Small Text</p>
-                </div>
+            <div className={styles.onOff}>
+                {user?(
+                    <>
+                    <div className={styles.icon}>
+                        <button className={styles.mypageButton}>마이페이지</button>
+                    </div>
+                    <div className={styles.icon}>
+                        <button className={styles.mypageButton} onClick={logOut}>로그아웃</button>
+                    </div>
+                    </>  
+                ):(
+                    <>
+                        <Link to="/signin" className={styles.linkTo}>
+                            <div className={styles.icon}>
+                                <button className={styles.mypageButton}>로그인</button>
+                            </div>
+                        </Link>
+
+                    </>
+                )}
+                {/* <LoginModal isOpen={isModalOpen} onClose={closeModal} /> */}
             </div>
             <a href="/signup">
                 <button>회원가입</button>

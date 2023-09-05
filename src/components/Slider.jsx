@@ -20,7 +20,7 @@ const ImageSlider = (imgSlide,SliderTextTop) => {
         <div
           style={{
             color: 'white',
-            marginLeft: '84%',
+            marginLeft: '87%',
             marginBottom: '46vh',
             width: '10%',
             position: 'absolute',
@@ -38,7 +38,7 @@ const ImageSlider = (imgSlide,SliderTextTop) => {
 
   return (
 
-    <div className={styles.mainWrap}>
+    <div>
     <Slider {...settings}>
         {imgArr&&
             imgArr[0].map((imgURL,index)=> (
@@ -47,6 +47,7 @@ const ImageSlider = (imgSlide,SliderTextTop) => {
                     key={index}
                     src={`${process.env.PUBLIC_URL}/public_assets/mainImg/main_${imgURL}.svg`}
                     alt="main"
+                    className={styles.imgSlide}
                 />
                 <p className={styles.slideText}>{SliderTextTop.id}</p>
                 <p className={styles.intro}>함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요!

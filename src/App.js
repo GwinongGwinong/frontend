@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import React from "react";
+import { RouterProvider, createBrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 import Home from "./pages/Home";
 import HolidayPackage from "./pages/HolidayPackage";
@@ -9,7 +9,9 @@ import DetailBuilding from "./pages/DetailBuilding";
 import DetailMoment from "./pages/DetailMoment";
 import DetailHost from "./pages/DetailHost";
 import SignUp from "./pages/SignUp";
+import SignIn from "./components/SignIn";
 
+import { RecoilRoot } from "recoil";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,16 +41,18 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <SignUp />,
   },
+  { 
+    path: "/signin",
+    element: <SignIn />,
+  },
 ]);
 
 
 function App() {
-  return (
-    <React.StrictMode>
-      <Layout>
-        <RouterProvider router={router}></RouterProvider>
-      </Layout>
-    </React.StrictMode>
+  return (        
+        <RecoilRoot>
+            <RouterProvider router={router}></RouterProvider>
+        </RecoilRoot>
   );
 }
 
