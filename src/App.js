@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import React from "react";
+import { RouterProvider, createBrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 import Home from "./pages/Home";
 import HolidayPackage from "./pages/HolidayPackage";
-import Layout from "./components/Layout";
+import SignIn from "./components/SignIn";
 
-
+import { RecoilRoot } from "recoil";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,16 +15,19 @@ const router = createBrowserRouter([
     path: "/holidaypackage",
     element: <HolidayPackage />,
   },
+  {
+    path: "/signin",
+    element: <SignIn/>,
+  }
 ]);
 
 
 function App() {
-  return (
-    <React.StrictMode>
-      <Layout>
-        <RouterProvider router={router}></RouterProvider>
-      </Layout>
-    </React.StrictMode>
+  return (        
+        <RecoilRoot>
+            <RouterProvider router={router}></RouterProvider>
+        </RecoilRoot>
+
   );
 }
 

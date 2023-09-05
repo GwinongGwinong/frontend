@@ -10,7 +10,7 @@ const Heart = styled.img`
 
 const HeartButton = ({ like, onClick }) => {
     return (
-        <Heart src={like?"/public_assets/full_heart.png":"/public_assets/heart.svg"} onClick={onClick} />
+        <Heart src={like?"/public_assets/homeImg/full_heart.png":"/public_assets/homeImg/heart.svg"} onClick={onClick} />
     );
 };
 
