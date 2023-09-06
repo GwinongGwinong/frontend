@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const ImageSlider = (imgSlide,SliderTextTop) => {
+const ImageSlider = (imgSlide,textTop) => {
   const imgArr = Object.values(imgSlide);
 
   const settings = {
@@ -49,7 +49,7 @@ const ImageSlider = (imgSlide,SliderTextTop) => {
                     alt="main"
                     className={styles.imgSlide}
                 />
-                <p className={styles.slideText}>{SliderTextTop.id}</p>
+                <p className={styles.slideText}>{textTop.values}</p>
                 <p className={styles.intro}>함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요!
                 행복한 전원생활을 함께해보세요!</p>
             </div>

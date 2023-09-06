@@ -48,9 +48,11 @@ export default function Navbar() {
                         <div className={styles.icon}>
                             <button className={styles.mypageButton}>로그인</button>
                         </div>
-                        <a href="/signup">
-                            <button>회원가입</button>
-                        </a>
+                    </Link>
+                    <Link to="/signup">
+                        <div>
+                            <button className={styles.mypageButton}>회원가입</button>
+                        </div>
                     </Link>
                     </>
                 )}
