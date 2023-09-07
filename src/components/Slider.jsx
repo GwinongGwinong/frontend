@@ -50,8 +50,7 @@ const ImageSlider = (props) => {
                     className={styles.imgSlide}
                 />
                 <p className={styles.slideText}>{props.SliderTextTop}</p>
-                <p className={styles.intro}>함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요!
-                행복한 전원생활을 함께해보세요!</p>
+                <p className={styles.intro}>{props.SliderTextBottom}</p>
             </div>
         ))}
     </Slider>

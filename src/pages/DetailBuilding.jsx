@@ -5,9 +5,11 @@ import ImageSlider from "../components/Slider";
 
 export default function DetailBuilding() {
     const [imgUrl,setImgUrl] = useState(['1']);
+    const [SliderTextTop,setSliderTextTop]=useState("인기있는 이색 농촌 전원주택");
+    const [SliderTextBottom,setSliderTextBottom]=useState("함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요! 행복한 전원생활의 순간들!");
     return (
         <>
-            <ImageSlider imgUrl={imgUrl}/> 
+            <ImageSlider imgUrl={imgUrl} SliderTextTop={SliderTextTop} SliderTextBottom={SliderTextBottom}/> 
             <h2>살아보고 싶은 이색 농촌 전원 주택</h2>
             <div className={styles.card}>
                 <Card

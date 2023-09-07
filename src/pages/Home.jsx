@@ -26,7 +26,7 @@ export default function Home() {
     return (
         <>
         <Navbar/>
-        <ImageSlider imgUrl={imgUrl} SliderTextTop={SliderTextTop}/>   
+        <ImageSlider imgUrl={imgUrl} SliderTextTop={SliderTextTop} SliderTextBottom={SliderTextBottom}/>   
         <div className={styles.titles}>
             <a href='#one'>{mainList[0]}</a>
             <a href='#two'>{mainList[1]}</a>
