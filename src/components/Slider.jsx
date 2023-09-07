@@ -5,8 +5,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const ImageS.lider = ({imgSlide,SliderTextTop}) => {
-  const imgArr = Object.values(imgSlide);
+const ImageSlider = (props) => {
+  const imgArr = Object.values(props.imgUrl);
 
   const settings = {
     dots: true,
@@ -40,8 +40,8 @@ const ImageS.lider = ({imgSlide,SliderTextTop}) => {
 
     <div>
     <Slider {...settings}>
-        {imgArr[0]&&
-            imgArr[0].map((imgURL,index)=> (
+        {imgArr&&
+            imgArr.map((imgURL,index)=> (
             <div>
                 <img
                     key={index}
@@ -49,7 +49,7 @@ const ImageS.lider = ({imgSlide,SliderTextTop}) => {
                     alt="main"
                     className={styles.imgSlide}
                 />
-                <p className={styles.slideText}>{SliderTextTop??SliderTextTop}</p>
+                <p className={styles.slideText}>{props.SliderTextTop}</p>
                 <p className={styles.intro}>함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요!
                 행복한 전원생활을 함께해보세요!</p>
             </div>

@@ -26,10 +26,10 @@ function LoginModal({ isOpen, onClose }) {
   return (
       <div className='wrapper'>
         <Navbar className="nav"/>
-        <h2>함께 가꾸어나가는 귀농생활</h2>
+        <h2 className='text'>함께 가꾸어나가는 귀농생활</h2>
         <div className="input-container">
           <div className="email-container">
-            <h3>아이디(이메일)</h3>
+            <h3 className="email">아이디(이메일)</h3>
             <input
               type="text"
               placeholder="Username"
