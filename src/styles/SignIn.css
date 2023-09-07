@@ -52,6 +52,14 @@
     width: 45%;
     height: 57px;
     margin-top: 7vh;
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
   }
   
   .loginButton:hover {

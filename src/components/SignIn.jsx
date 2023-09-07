@@ -40,7 +40,7 @@ function LoginModal({ isOpen, onClose }) {
           </div>
           
           <div className="email-container">
-            <h3>비밀번호</h3>
+            <h3 className="email">비밀번호</h3>
             <input
               type="password"
               placeholder="Password"
