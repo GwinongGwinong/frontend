@@ -10,15 +10,22 @@ hr{
 }
 
 .wrapAll{
-    width:50%;
+    width:70%;
 }
 
 .wrapLine{
     display: flex;
     justify-content: space-between;
     margin:0 auto;
+    padding:5px;
 }
-
+input{
+    width: 40vw;
+    height: 40px;
+    border: 2px solid var(--color-grey);
+    border-radius: 10px;
+    text-align: center;
+}
 .text{
     font-weight: bold;
 }

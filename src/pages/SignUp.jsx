@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from "../styles/SignUp.module.css";
 
 export default function SignUp() {
+    const [clicked,setClicked]=useState(false);
+    const updateClick=()=>{
+        setClicked(!clicked);
+    }
     return (
         <>
             <h1>회원가입</h1>
@@ -37,8 +41,8 @@ export default function SignUp() {
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>유형</div>
-                    <button className={styles.selectButton}>게스트</button>
-                    <button className={styles.selectButton}>호스트</button>
+                    <button className={styles.selectButton} onClick={updateClick}>게스트</button>
+                    <button className={styles.selectButton} onClick={updateClick}>호스트</button>
                 </form>
                 <form action="">
                     <button className={styles.submitButton}>가입 완료</button>
