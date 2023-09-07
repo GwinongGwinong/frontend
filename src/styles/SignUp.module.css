@@ -1,12 +1,52 @@
 h1{
     text-align: center;
 }
+
 hr{
     width:70%;
     height:2px;
     border: 0;
     background-color: var(--color-black);
 }
-.WrapAll{
-    text-align: center;
+
+.wrapAll{
+    width:50%;
+}
+
+.wrapLine{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+
+.text{
+    font-weight: bold;
+}
+
+.selectButton{
+    width: 109px;
+    height: 41px;
+    border-radius: 10px;
+    background: none;
+    border-color: var(--color-grey);
+    color: var(--color-grey);
+    font-size: 20px;
+}
+.selectButton:hover{
+    background-color: var(--color-yellow);
+}
+.selectButton:active{
+    color:var(--color-white);
+}
+
+.submitButton{
+    border-radius: 10px;
+    border: none;
+    background: var(--color-yellow);
+    color:var(--color-white);
+    font-size: 20px;
+    font-weight: bold;
+    width: 45%;
+    height: 57px;
+    margin-top: 7vh;
 }

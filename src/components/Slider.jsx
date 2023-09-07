@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const ImageSlider = ({imgSlide,SliderTextTop}) => {
+const ImageS.lider = ({imgSlide,SliderTextTop}) => {
   const imgArr = Object.values(imgSlide);
 
   const settings = {
