@@ -8,6 +8,9 @@ import { useRecoilState } from "recoil";
 import { userInfo } from "../recoil";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer";
+import SearchGuest from "../components/SearchGuest";
+import SearchApplicant from "../components/SearchApplicant";
+import MypageHost from "./MypageHost";
 
 export default function Home() {
     /*
@@ -150,6 +153,7 @@ export default function Home() {
             </div>
         </div>
         <Footer />
+        <MypageHost />
         </>
     );
         

@@ -7,6 +7,11 @@ export default function SignUp() {
     const [clicked,setClicked]=useState(false);
     const updateClick=()=>{
         setClicked(true);
+        if(clicked===true){
+            
+        }else{
+            
+        }
     }
     const checkClick=()=>{
         alert(clicked);
