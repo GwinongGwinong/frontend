@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import styles from "../styles/SignUp.module.css";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function SignUp() {
     const [clicked,setClicked]=useState(false);
     const updateClick=()=>{
-        setClicked(!clicked);
+        setClicked(true);
+    }
+    const checkClick=()=>{
+        alert(clicked);
     }
     return (
         <>
@@ -13,7 +18,7 @@ export default function SignUp() {
             <div className={styles.wrapAll}>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>아이디 (이메일)</div>
-                    <input type="text" placeholder="아이디를 입력해주세요"/>
+                    <input type="email" placeholder="아이디를 입력해주세요"/>
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>비밀번호</div>
@@ -37,18 +42,22 @@ export default function SignUp() {
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>주소</div>
-                    <input type="text" />
+                    <input className={styles.address} type="text" placeholder="주소 검색"/>
                 </form>
+                <div className={styles.wrapLine}>
+                    <div className={styles.text}></div>
+                    <input type="text" placeholder="상세주소 입력"/>
+                </div>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>유형</div>
-                    <button className={styles.selectButton} onClick={updateClick}>게스트</button>
-                    <button className={styles.selectButton} onClick={updateClick}>호스트</button>
+                    <button className={styles.selectButton} onClick={updateClick} type="button">게스트</button>
+                    <button className={styles.selectButton} onClick={updateClick} type="button">호스트</button>
                 </form>
-                <form action="">
-                    <button className={styles.submitButton}>가입 완료</button>
+                <form action="" className={styles.wrapButton}>
+                    <button className={styles.submitButton} onClick={checkClick}>가입 완료</button>
                 </form>
             </div>
-            
+            <Footer />
         </>
     );
 }
