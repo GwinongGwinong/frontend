@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Card from "../components/Card";
 import styles from "../styles/Home.module.css";
 import ImageSlider from "../components/Slider";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function DetailBuilding() {
     const [imgUrl,setImgUrl] = useState(['1']);
@@ -9,6 +11,7 @@ export default function DetailBuilding() {
     const [SliderTextBottom,setSliderTextBottom]=useState("함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요! 행복한 전원생활의 순간들!");
     return (
         <>
+            <Navbar />
             <ImageSlider imgUrl={imgUrl} SliderTextTop={SliderTextTop} SliderTextBottom={SliderTextBottom}/> 
             <h2>살아보고 싶은 이색 농촌 전원 주택</h2>
             <div className={styles.card}>
@@ -43,6 +46,7 @@ export default function DetailBuilding() {
                     textUnderLeft={`${process.env.PUBLIC_URL}/public_assets/homeImg/building-host.svg`}
                     textUnderRight={`월10/6개월`}/>
             </div>
+            <Footer />
         </>
     );
 }

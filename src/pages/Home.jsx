@@ -7,6 +7,7 @@ import CardLong from "../components/CardLong";
 import { useRecoilState } from "recoil";
 import { userInfo } from "../recoil";
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer";
 
 export default function Home() {
     /*
@@ -148,6 +149,7 @@ export default function Home() {
                     textUnderRight={`4.91`}/>
             </div>
         </div>
+        <Footer />
         </>
     );
         
