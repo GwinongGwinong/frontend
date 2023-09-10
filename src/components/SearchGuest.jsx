@@ -5,7 +5,7 @@ import styles from '../styles/SearchGuest.module.css';
 export default function SearchGuest() {
     const [total,setTotal]=useState(0);
     return (
-        <div>
+        <div className={styles.wrap}>
             <h2>파밍 홀리데이 게스트 조회</h2>
             <hr />
             <div>{total}명의 게스트</div>

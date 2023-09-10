@@ -2,11 +2,18 @@
     display: flex;
     justify-content: space-between;
     margin:0 auto;
+    width: 1200px;
 }
 .wrapLR{
     display: flex;
+    width: 600px;
+    background-color: var(--color-yellow);
 }
 .wrapTD{
     display: flex;
     flex-direction: column;
+}
+.square{
+    width: 250px;
+    background-color: var(--color-yellow);
 }

@@ -4,8 +4,14 @@ import styles from '../styles/SearchApplicant.module.css';
 
 export default function SearchApplicant() {
     const [total,setTotal]=useState(0);
+    const handleClickYes=()=>{
+        alert("YES");
+    }
+    const handleClickNo=()=>{
+        alert("NO");
+    }
     return (
-        <div>
+        <div className={styles.wrap}>
             <h2>파밍 홀리데이 신청자 조회</h2>
             <hr />
             <div>{total}개의 신청서</div>
@@ -21,8 +27,8 @@ export default function SearchApplicant() {
                 <div>전북 임실 치즈 전원주택 1인실</div>
                 <div>2023.7.30~2023.7.30</div>
                 <div>310</div>
-                <button className={styles.buttonYes} type='button'>수락</button>
-                <button className={styles.buttonNo} type='button'>거절</button>
+                <button className={styles.buttonYes} type='button' onClick={handleClickYes}>수락</button>
+                <button className={styles.buttonNo} type='button' onClick={handleClickNo}>거절</button>
             </div>
             <hr />
         </div>

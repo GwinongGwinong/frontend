@@ -10,8 +10,11 @@ import DetailMoment from "./pages/DetailMoment";
 import DetailHost from "./pages/DetailHost";
 import SignUp from "./pages/SignUp";
 import SignIn from "./components/SignIn";
+import ScrollToTop from "./components/ScrollToTop";
+import MypageHost from "./pages/MypageHost";
 
 import { RecoilRoot } from "recoil";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,13 +51,19 @@ const router = createBrowserRouter([
   {  path: "/signin",
     element: <SignIn/>,
   }
+  ,{
+    path: "/mypagehost",
+    element: <MypageHost />,
+  }
 ]);
 
 
 function App() {
   return (        
         <RecoilRoot>
-            <RouterProvider router={router}></RouterProvider>
+            <RouterProvider router={router}>
+              <ScrollToTop />
+            </RouterProvider>
         </RecoilRoot>
 
   );
