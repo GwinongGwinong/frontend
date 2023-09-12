@@ -7,6 +7,18 @@ export default function SignUp() {
     const [clickedGuest,setClickedGuest]=useState(false);
     const [clickedHost,setClickedHost]=useState(false);
     const [value,setValue]=useState(["guest","host"]);
+    /*https://velog.io/@postlist/REACT-useState */
+    const initialInfo={
+        id:"",
+        password:"",
+        name:"",
+        birth:"",
+        phone:"",
+        address:"",
+        type:""
+    };
+    const [info,setInfo]=useState(initialInfo);
+    const {id,password,name,birth,phone,address,type}=info;
     const updateClick=(value)=>{
         if(value==="guest"){
             setClickedGuest(true);
@@ -15,10 +27,14 @@ export default function SignUp() {
             setClickedGuest(false);
             setClickedHost(true);
         }
-        alert(value);
     }
     const checkClick=()=>{
-        alert(clickedHost);
+        if(id===""){
+            alert("id를 입력해주세요!");
+        }
+        else{
+            alert('통과입니다!');
+        }
     }
     return (
         <>
@@ -27,11 +43,11 @@ export default function SignUp() {
             <div className={styles.wrapAll}>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>아이디 (이메일)</div>
-                    <input type="email" placeholder="아이디를 입력해주세요"/>
+                    <input type="email" placeholder="아이디를 입력해주세요" value={id}/>
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>비밀번호</div>
-                    <input type="password" placeholder="비밀번호를 입력해주세요"/>
+                    <input type="password" placeholder="비밀번호를 입력해주세요" value={id}/>
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>비밀번호 확인</div>
@@ -39,15 +55,15 @@ export default function SignUp() {
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>이름</div>
-                    <input type="text" placeholder="이름을 입력해주세요"/>
+                    <input type="text" placeholder="이름을 입력해주세요" value={id}/>
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>생년월일</div>
-                    <input type="text" placeholder="생년월일 6자리를 입력해주세요"/>
+                    <input type="text" placeholder="생년월일 6자리를 입력해주세요" value={id}/>
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>휴대폰</div>
-                    <input type="text" placeholder="숫자만 입력해주세요"/>
+                    <input type="text" placeholder="숫자만 입력해주세요" value={id}/>
                 </form>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>주소</div>
@@ -55,7 +71,7 @@ export default function SignUp() {
                 </form>
                 <div className={styles.wrapLine}>
                     <div className={styles.text}></div>
-                    <input type="text" placeholder="상세주소 입력"/>
+                    <input type="text" placeholder="상세주소 입력" value={id}/>
                 </div>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>유형</div>
