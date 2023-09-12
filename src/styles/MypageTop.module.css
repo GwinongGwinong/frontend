@@ -1,11 +1,12 @@
 .topContainer {
     display: flex;
+    gap: 50px;
     width: 100%; 
 }
 
 .profileCard{
     display: flex;
-    width: 42vw;
+    width: 45vw;
     height: 46vh;
     padding-top: 15.094px;
     justify-content: center;
@@ -104,15 +105,32 @@
     padding-bottom: 40px;
 }
 
-.rightTop{
+.topContent{
+    width: 45vw;
     display: flex;
-    width: 42vw;
+    flex-direction: column;
+    gap: 29px;
+    height: 46vh;
+}
+
+.imgContainer{
+    position: relative;
+    width: 50%;
+    height: fit-content;
 }
 
 .steamed{
-    width: 50%;
-    height: 22vh;
-    border-radius: 22px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), lightgray 1.631px -96.05px / 100.643% 217% no-repeat;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+
+.titleText{
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    z-index: 1;
 }
