@@ -37,7 +37,7 @@ export default function Navbar() {
             <div className={styles.onOff}>
                 {user?(
                     <>
-                    <Link to="/mypage" className={styles.linkTo}>
+                    <Link to="/mypageGuest" className={styles.linkTo}>
                         <div className={styles.icon}>
                             <button className={styles.mypageButton}>마이페이지</button>
                         </div>
