@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 import SearchGuest from "../components/SearchGuest";
 import SearchApplicant from "../components/SearchApplicant";
 import MypageHost from "./MypageHost";
+import ScrollToTop from "../components/ScrollToTop";
 
 export default function Home() {
     /*
@@ -107,7 +108,7 @@ export default function Home() {
         <div id="three">
             <h2>파밍 홀리데이 순간들</h2>
             <div className={styles.showMore}>
-                <Link to="/detailmoment">
+                <Link to="/detailmoment" onClick={ScrollToTop}>
                     {showMore}
                 </Link>
             </div>
@@ -124,7 +125,7 @@ export default function Home() {
         <div id="four">
             <h2>파밍 홀리데이 슈퍼 호스트</h2>
             <div className={styles.showMore}>
-                <Link to="/detailhost">
+                <Link to="/detailhost" onClick={ScrollToTop}>
                     {showMore}
                 </Link>
             </div>
