@@ -4,17 +4,21 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function SignUp() {
-    const [clicked,setClicked]=useState(false);
-    const updateClick=()=>{
-        setClicked(true);
-        if(clicked===true){
-            
-        }else{
-            
+    const [clickedGuest,setClickedGuest]=useState(false);
+    const [clickedHost,setClickedHost]=useState(false);
+    const [value,setValue]=useState(["guest","host"]);
+    const updateClick=(value)=>{
+        if(value==="guest"){
+            setClickedGuest(true);
+            setClickedHost(false);
+        }else if(value==="host"){
+            setClickedGuest(false);
+            setClickedHost(true);
         }
+        alert(value);
     }
     const checkClick=()=>{
-        alert(clicked);
+        alert(clickedHost);
     }
     return (
         <>
@@ -55,11 +59,11 @@ export default function SignUp() {
                 </div>
                 <form action="" className={styles.wrapLine}>
                     <div className={styles.text}>유형</div>
-                    <button className={styles.selectButton} onClick={updateClick} type="button">게스트</button>
-                    <button className={styles.selectButton} onClick={updateClick} type="button">호스트</button>
+                    <button className={`${clickedGuest===true?styles.selectOn:styles.selectOff}`} onClick={()=>{updateClick(value[0])}} type="button">게스트</button>
+                    <button className={`${clickedHost===true?styles.selectOn:styles.selectOff}`} onClick={()=>{updateClick(value[1])}} type="button">호스트</button>
                 </form>
                 <form action="" className={styles.wrapButton}>
-                    <button className={styles.submitButton} onClick={checkClick}>가입 완료</button>
+                    <button className={styles.submitButton} onClick={checkClick} type='button'>가입 완료</button>
                 </form>
             </div>
             <Footer />
