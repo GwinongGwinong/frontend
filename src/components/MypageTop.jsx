@@ -27,7 +27,7 @@ const MypageTop = () => {
                             
                          
                             <div className={styles.userName}>
-                                김희윤
+                                김민정
                             </div>
 
                             <div className={styles.medal}>
@@ -65,7 +65,10 @@ const MypageTop = () => {
                             />
                     </div>
                     <div>
-
+                            <img
+                                src={`${process.env.PUBLIC_URL}/public_assets/mypageImg/steamed.svg`}
+                                alt="steamed"
+                            />
                     </div>
                 </div>
             </div>
