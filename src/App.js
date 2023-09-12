@@ -12,6 +12,7 @@ import SignUp from "./pages/SignUp";
 import SignIn from "./components/SignIn";
 import ScrollToTop from "./components/ScrollToTop";
 import MypageHost from "./pages/MypageHost";
+import MypageGuest from "./pages/MypageGuest";
 
 
 import { RecoilRoot } from "recoil";
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
   ,{
     path: "/mypagehost",
     element: <MypageHost />,
+  },
+  {
+    path: "/mypageguest",
+    element: <MypageGuest />,
   }
 ]);
 

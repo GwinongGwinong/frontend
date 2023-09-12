@@ -4,10 +4,6 @@ import HeartButton from "../components/HeartButton";
 import Navbar from "../components/Navbar"
 import HolidayInfo from "../components/HolidayInfo"
 import Map from "../components/Map"
-
-import { CSSTransition } from 'react-transition-group';
-
-
 import "../styles/HolidayPackage.css";
 
 export default function HolidayPackage() {
