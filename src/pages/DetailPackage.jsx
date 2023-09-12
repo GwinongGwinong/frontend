@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function DetailPackage() {
-    const [imgUrl,setImgUrl] = useState(['1']);
+    const [imgUrl,setImgUrl] = useState(['/public_assets/mainImg/main_1']);
     const [SliderTextTop,setSliderTextTop]=useState("인기있는 파밍 홀리데이");
     const [SliderTextBottom,setSliderTextBottom]=useState("함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요! 행복한 전원생활을 함께해보세요!");
     return (
