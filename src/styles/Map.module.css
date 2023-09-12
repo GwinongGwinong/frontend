@@ -1,0 +1,16 @@
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.mapInfo{
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+}

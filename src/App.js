@@ -11,6 +11,7 @@ import DetailHost from "./pages/DetailHost";
 import SignUp from "./pages/SignUp";
 import SignIn from "./components/SignIn";
 
+
 import { RecoilRoot } from "recoil";
 const router = createBrowserRouter([
   {
@@ -45,9 +46,7 @@ const router = createBrowserRouter([
     path: "/signin",
     element: <SignIn />,
   },
-  {  path: "/signin",
-    element: <SignIn/>,
-  }
+ 
 ]);
 
 

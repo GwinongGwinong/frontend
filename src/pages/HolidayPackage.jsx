@@ -2,6 +2,11 @@ import React, { useContext, useEffect, useState } from "react";
 import styles from "../styles/HolidayPackage.module.css";
 import HeartButton from "../components/HeartButton";
 import Navbar from "../components/Navbar"
+import HolidayInfo from "../components/HolidayInfo"
+import Map from "../components/Map"
+
+import { CSSTransition } from 'react-transition-group';
+
 
 import "../styles/HolidayPackage.css";
 
@@ -17,10 +22,8 @@ export default function HolidayPackage() {
 
     // 옵션 목록 배열
     const options = [
-        '옵션 1',
-        '옵션 2',
-        '옵션 3',
-        '옵션 4',
+        '1인실/ 전북 임실치즈 전원주택 (2/5층)',
+        '2인실/ 전북 임실치즈 전원주택 (2/5층)',
     ];
 
     //실제 사용
@@ -40,7 +43,7 @@ export default function HolidayPackage() {
     //   }, []);
     
 
-      // 옵션을 선택하면 선택된 값을 업데이트하고 옵션 목록을 닫습니다.
+    // 옵션을 선택하면 선택된 값을 업데이트하고 옵션 목록을 닫습니다.
   const handleOptionClick = (option) => {
     setSelectedRoom(option);
     setShowOptions(false);
@@ -57,7 +60,35 @@ export default function HolidayPackage() {
     const toggleLike = async (e) => {
         // const res = await axios.post(...) // 사용자가 좋아요를 누름 -> DB 갱신
         setLike(!like);
-    }
+    };
+
+//      constructor(props) {
+//     super(props);
+//     this.state = {
+//       isHovered: false,
+//       isClicked: false,
+//     };
+//   };
+    const [firstIsClicked, setfirstIsClicked] = useState(true);
+    const [secondIsClicked, setSecondIsClicked] = useState(false);
+    const [thirdIsClicked, setThirdIsClicked] = useState(false);
+
+  const handleFirstClick = () => {
+    setfirstIsClicked(true);
+    setSecondIsClicked(false);
+    setThirdIsClicked(false);
+  };
+  const handleSecondClick = () => {
+    setfirstIsClicked(false);
+    setThirdIsClicked(false);
+    setSecondIsClicked(true);
+  }; 
+  const handleThirdClick = () => {
+    setfirstIsClicked(false);
+    setSecondIsClicked(false);
+    setThirdIsClicked(true);
+
+  };
 
     return (
         <>
@@ -65,7 +96,7 @@ export default function HolidayPackage() {
         <div className={styles.TopWrap}>
             <div className={styles.imageContainer}>
                 <img
-                src={`/public_assets/packageImg/package_img_${imgIndex}.svg`}              
+                src={`public_assets/packageImg/package_img_${imgIndex}.svg`}              
                 alt={`Image ${imgIndex}`}
                 className ={styles.mainImg} 
                 />
@@ -125,6 +156,34 @@ export default function HolidayPackage() {
             </span>
         </div>
         
+        <div className={styles.menu}>
+            <div className={styles.menuBar}>
+                <div className={styles.menuButton} onClick={handleFirstClick}>
+                    파밍홀리데이
+                </div>
+                <div className={styles.menuButton} onClick ={handleSecondClick} >
+                    숙소
+                </div>
+                <div className={styles.menuButton} onClick ={handleThirdClick}>
+                    호스트
+                </div>
+            </div>
+            <div className={styles.dividingLine}>
+                {firstIsClicked && <div className="underline"></div>}
+                {secondIsClicked && <div className="underline2"></div>}
+                {thirdIsClicked && <div className="underline3"></div>}
+            </div>
+        </div>
+
+        {firstIsClicked && 
+            <>
+            <HolidayInfo 
+            />
+            <div className={styles.dividingLine}>
+            </div>
+            <Map />
+            </>
+        }
         
         </>
     );

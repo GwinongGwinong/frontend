@@ -17,16 +17,23 @@ export default function Home() {
     textUnderLeft,textUnderRight
     */
     const [user, setUser] = useRecoilState(userInfo);
-
+    const marginLeftValue = '87%';
+    const marginBottom = '46vh';
     const mainList=['홀리데이 패키지','이색 전원주택','홀리데이 커뮤니티','호스트 이야기'];
     const showMore='더보러가기 >';
-    const [imgUrl,setImgUrl] = useState(['1','2','2']);
+    const [imgUrl,setImgUrl] = useState(['/public_assets/mainImg/main_1','/public_assets/mainImg/main_2','/public_assets/mainImg/main_2']);
     const [SliderTextTop,setSliderTextTop]=useState("함께 가꾸어나가는 귀농생활");
     const [SliderTextBottom,setSliderTextBottom]=useState("함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요! 행복한 전원생활을 함께해보세요!");
     return (
         <>
         <Navbar/>
-        <ImageSlider imgUrl={imgUrl} SliderTextTop={SliderTextTop}/>   
+        <ImageSlider 
+            imgUrl={imgUrl} 
+            SliderTextTop={SliderTextTop} 
+            SliderTextBottom={SliderTextBottom}
+            marginLeftValue={marginLeftValue}
+            marginBottom={marginBottom}
+        />   
         <div className={styles.titles}>
             <a href='#one'>{mainList[0]}</a>
             <a href='#two'>{mainList[1]}</a>

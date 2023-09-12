@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden; /* X축 스크롤 막기 */
-    padding: 0 3.5vw 0 3.5vw;
+    padding: 0 3.5vw 0 3.5vw !important;
   }
 
 .TopWrap{
@@ -98,7 +98,7 @@ body {
 .blackLine {
     width: 45.5vw;
     height: 0.9px;
-    margin-top: 3.5%;
+    margin-top: 2%;
     background-color: black;
 }
   
@@ -159,7 +159,7 @@ body {
 .innerPlus{
     display: flex;
     flex-direction: column;
-    gap: 88%;
+    gap: 80%;
     margin-top: 1.5%;
     margin-left: 16%;
 }
@@ -171,7 +171,6 @@ body {
     font-size: 27px;
     font-style: normal;
     font-weight: 700;
-    line-height: 123.523%; /* 33.351px */
 }
 
 .selectRoom{
@@ -194,7 +193,6 @@ body {
     display: flex;
     margin-top: 12vh;
     flex-direction: column;
-    float: right;
     gap: 15px;
 }
 
@@ -207,9 +205,57 @@ body {
   }
 
   .admit{
-    width: 642px;
+    width: 44vw;
     height: 67px;
     flex-shrink: 0;
+    border: none;
     border-radius: 10px;
     background: #0086FD;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.523%; /* 28.41px */
   }
+
+  .menu{
+    display:flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .menuBar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    float: left;
+    color: #818181;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    width: 45vw;
+  }
+
+  .menuButton{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+    height: 50px;    
+  }
+
+  .dividingLine{
+    display: flex;
+    flex-direction: row;
+    background: #BEBEBE;
+    width: 100%;
+    height: 1.5px;
+    margin-bottom: 70px;
+  }
+

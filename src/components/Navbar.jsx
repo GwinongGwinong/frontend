@@ -25,6 +25,7 @@ export default function Navbar() {
     return (
         <>
         <div className={styles.navBar}>
+            <Link to="/"  className={styles.linkTo}>
             <div className={styles.logoBox}>
                 <img
                     src={`${process.env.PUBLIC_URL}/public_assets/logo.svg`}
@@ -32,12 +33,16 @@ export default function Navbar() {
                     alt="Logo"
                 />
             </div>
+            </Link>
             <div className={styles.onOff}>
                 {user?(
                     <>
-                    <div className={styles.icon}>
-                        <button className={styles.mypageButton}>마이페이지</button>
-                    </div>
+                    <Link to="/mypage" className={styles.linkTo}>
+                        <div className={styles.icon}>
+                            <button className={styles.mypageButton}>마이페이지</button>
+                        </div>
+                    </Link>
+
                     <div className={styles.icon}>
                         <button className={styles.mypageButton} onClick={logOut}>로그아웃</button>
                     </div>

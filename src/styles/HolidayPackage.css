@@ -39,3 +39,55 @@
     background-color: #f0f0f0;
   }
   
+  .menuButton {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menuButton button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .menuButton button.hovered {
+    transform: scale(1.05);
+  }
+  
+  .menuButton.clicked {
+    /* 클릭에 대한 스타일을 여기에 추가하세요 */
+  }
+  
+.underline {
+  /* position: absolute; */
+  width: 15.5vw;
+  height: 3px;
+  background-color: #000; /* 굵은 선의 색상 설정 */
+  bottom: 0;
+}
+
+.underline2 {
+  /* position: absolute; */
+  width: 15.5vw;
+  margin-left: 15vw;
+
+  height: 3px;
+  background-color: #000; /* 굵은 선의 색상 설정 */
+  bottom: 0;
+}
+  
+.underline3 {
+  /* position: absolute; */
+  width: 15.5vw;
+  margin-left: 30vw;
+
+  height: 3px;
+  background-color: #000; /* 굵은 선의 색상 설정 */
+  bottom: 0;
+}
+  
+  

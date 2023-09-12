@@ -20,12 +20,13 @@ const ImageSlider = (props) => {
         <div
           style={{
             color: 'white',
-            marginLeft: '87%',
-            marginBottom: '46vh',
+            marginLeft: props.marginLeftValue,
+            marginBottom: props.marginBottom,
             width: '10%',
             position: 'absolute',
             bottom: '24px',
             display: 'flex',
+            flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center'
           }}
@@ -45,13 +46,12 @@ const ImageSlider = (props) => {
             <div>
                 <img
                     key={index}
-                    src={`${process.env.PUBLIC_URL}/public_assets/mainImg/main_${imgURL}.svg`}
+                    src={`${process.env.PUBLIC_URL}${imgURL}.svg`}
                     alt="main"
                     className={styles.imgSlide}
                 />
                 <p className={styles.slideText}>{props.SliderTextTop}</p>
-                <p className={styles.intro}>함께 가꾸어나가는 귀농생활을 귀농귀농에서 함께해보세요!
-                행복한 전원생활을 함께해보세요!</p>
+                <p className={styles.intro}>{props.SliderTextBottom}</p>
             </div>
         ))}
     </Slider>
