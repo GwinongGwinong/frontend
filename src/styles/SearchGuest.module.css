@@ -1,0 +1,13 @@
+.wrap{
+    width: 1200px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+}
